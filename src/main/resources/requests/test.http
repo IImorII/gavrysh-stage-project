@@ -1,0 +1,103 @@
+### Send POST request with json body
+POST http://localhost:8090/objects
+Content-Type: application/json
+
+{ "name" : "object1" }
+
+### Send POST request with json body
+POST http://localhost:8090/options
+Content-Type: application/json
+
+{ "name" : "option1" }
+
+### Send POST request with json body
+POST http://localhost:8090/objects/1/type
+Content-Type: application/json
+
+{ "name" : "type1" }
+
+### Send POST request with json body
+POST http://localhost:8090/objects/1/policies/1
+Content-Type: application/json
+
+### Send POST request with json body
+POST http://localhost:8090/options/2/objects/2
+Content-Type: application/json
+
+### Send POST request with json body
+POST http://localhost:8090/objects/1/options/1
+Content-Type: application/json
+
+### Get request with a header
+GET http://localhost:8090/objects
+Accept: application/json
+
+### Get request with a header
+GET http://localhost:8090/options
+Accept: application/json
+
+### Get request with a header
+GET http://localhost:8090/clients
+Accept: application/json
+
+### Get request with a header
+GET http://localhost:8090/policies
+Accept: application/json
+
+### Send POST request with json body
+POST http://localhost:8090/clients
+Content-Type: application/json
+
+{ "name" : "client1" }
+
+### Send POST request with json body
+POST http://localhost:8090/policies
+Content-Type: application/json
+
+{ "name" : "policy1" }
+
+### Send POST request with json body
+POST http://localhost:8090/policies
+Content-Type: application/json
+
+{ "name" : "policy2" }
+
+### Send POST request with json body
+POST http://localhost:8090/clients/1/policies/1
+Content-Type: application/json
+
+### Send POST request with json body
+GET http://localhost:8090/clients/1/policies
+Content-Type: application/json
+
+### Send POST request with json body
+POST http://localhost:8090/clients/1/policies
+Content-Type: application/json
+
+{ "name" : "policy3" }
+
+### Send POST request with json body
+POST http://localhost:8090/objects
+Content-Type: application/json
+
+{ "name" : "object1" }
+
+### Send POST request with json body
+POST http://localhost:8090/objects/1/options
+Content-Type: application/json
+
+{ "name" : "option1" }
+
+### Send POST request with json body
+GET http://localhost:8090/objects
+Content-Type: application/json
+
+### Send POST request with json body
+GET http://localhost:8090/options
+Content-Type: application/json
+
+### Send DELETE request
+DELETE http://localhost:8090/clients/1
+
+### Send PUT request
+PUT http://localhost:8090/policies/1/clients/2
